@@ -1,114 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandrachud Diagnostic Centre</title>
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:1080px)" href="tablet.css">
-    <link type="text/css" rel="stylesheet" media="screen and (max-width:338px)" href="phone.css">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandrachud Pati — Pre-doctoral Researcher, Indian Institute of Science</title>
+  <meta name="description" content="Chandrachud Pati — Pre-doctoral researcher at IISc (DREAM Lab). Quantum computer systems & architecture, noise-adaptive compilation, and large-scale anomaly detection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div>
-            <nav id="nav">
-                <div id="logo">
-                    <img src="Image/icons/logo1.png" alt="Chandrachud Diagnostic Centre" width="66px" height="66px" >
-                </div>
-                <ul>
-                    <li class="item"><a href="#home">Home</a></li>
-                    <li class="item"><a href="#services-container">Our Services</a></li>
-                    <li class="item"><a href="#appiontment-section">Book an Appointment</a></li>
-                    <li class="item"><a href="#contactus">Contact Us</a></li>
-                </ul>           
-            </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">C·Pati</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="theme-icon">◑</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Pre-doctoral researcher · Indian Institute of Science</p>
+          <h1>Chandrachud&nbsp;Pati</h1>
+          <p class="lede">
+            I work on getting <em>reliable behavior</em> out of systems that are
+            noisy, large, and hard to reason about end&#8209;to&#8209;end across
+            <strong>quantum computer architecture</strong> and
+            <strong>large-scale anomaly detection</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#publications">View research</a>
+            <a class="btn btn-ghost" href="assets/Chandrachud_Pati_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-ghost" href="mailto:chandrachudp@iisc.ac.in">Get in touch</a>
+          </div>
+          <ul class="hero-links" aria-label="Profiles">
+            <li><a href="https://scholar.google.com/citations?user=u-qaIYEAAAAJ&hl=en" target="_blank" rel="noopener">Google&nbsp;Scholar</a></li>
+            <li><a href="https://github.com/Chandrachud23" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/chandrachud-pati/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://arxiv.org/abs/2605.07876" target="_blank" rel="noopener">arXiv</a></li>
+          </ul>
         </div>
-    </header>
-    <main>
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img src="assets/profile.jpeg" alt="Portrait of Chandrachud Pati" width="400" height="400" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="home">
-            <h1 class="h-primary">Chandrachud Diagnostic Centre</h1>
-            <h2>Transforming lives through Healthcare</h2>
-            <a href="#contact" class="btn">Register Now!</a>
-        </section>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head">
+        <span class="sec-num">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="prose">
+        <p>
+          I am a pre-doctoral researcher at the Indian Institute of Science (IISc), working across
+          two areas that share a hard problem: trusting the output of systems that are noisy and
+          large. On the <strong>quantum</strong> side, I work toward the goals of
+          <strong>India's National Quantum Mission</strong>, asking how reliable a near-term
+          device's results really are. On the <strong>data</strong> side, I work with
+          <strong>NPCI</strong>, whose UPI network clears over 700M transactions a day
+          on anomaly detection for fraud and AML.
+        </p>
+        <p>
+          I came to research through an Integrated M.Sc. in Mathematics at NIT Rourkela and two
+          years building production data and machine-learning systems in industry. The combination of
+          mathematical foundations and real systems at scale is what draws me to questions where
+          quantum computing and applied machine learning meet real workloads.
+        </p>
+      </div>
+    </section>
 
-        <section id="services-container">
-            <h1 class="h-primary">Our Services</h1>
-            <div id="services">
+    <!-- RESEARCH -->
+    <section class="section" id="research">
+      <div class="section-head">
+        <span class="sec-num">02</span>
+        <h2>Research interests</h2>
+      </div>
+      <p class="research-intro">
+        Three directions, unified by a single concern — <em>making computation reliable</em>,
+        from the quantum compiler down to production fraud systems.
+      </p>
+      <div class="cards cards-3">
+        <article class="card">
+          <h3>Quantum compilation &amp; systems</h3>
+          <p>Noise-adaptive compilation and per-phase fidelity attribution across the compiler
+          stack — gate decomposition, basis translation, routing. My HBR Decomposition framework
+          localizes <em>where</em> fidelity is lost in real pipelines.</p>
+        </article>
+        <article class="card">
+          <h3>Trustworthy quantum computation</h3>
+          <p>When can you trust the number a quantum device produces? I work on feasibility
+          analysis and distribution-free guarantees that connect a precision target to a given
+          device, circuit, and shot budget.</p>
+        </article>
+        <article class="card">
+          <h3>Anomaly detection at scale</h3>
+          <p>Graph neural networks for fraud and AML detection on transaction graphs at production
+          scale — reliability when the data is large, imbalanced, and adversarial.</p>
+        </article>
+      </div>
+    </section>
 
-                <div class="box">
-                    <img src="Image/icons/doc.jfif" alt="doc">
-                    <h2 class="h-secondary center">Top Doctors</h2>
-                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?</p>
-                </div>
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <div class="section-head">
+        <span class="sec-num">03</span>
+        <h2>Publications &amp; preprints</h2>
+      </div>
+      <ol class="pub-list">
+        <li class="pub">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <h3>The HBR Decomposition: Per-Phase Fidelity Attribution for Quantum Compiler Pipelines</h3>
+            <p class="pub-authors">Chandrachud Pati, Yogesh Simmhan</p>
+            <p class="pub-venue"><span class="tag tag-review">Under review</span> IEEE Quantum Week (QCE) 2026</p>
+            <p class="pub-links">
+              <a href="https://arxiv.org/abs/2605.07876" target="_blank" rel="noopener">arXiv:2605.07876</a>
+            </p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <h3>Fraud Detection using Hybrid Classical–Quantum Machine Learning</h3>
+            <p class="pub-authors">Chandrachud Pati</p>
+            <p class="pub-venue"><span class="tag">Preprint</span> A hybrid quantum-classical neural network reaching 0.943 AUC on highly imbalanced credit-card fraud data.</p>
+            <p class="pub-links">
+              <a href="https://doi.org/10.13140/RG.2.2.14787.92963" target="_blank" rel="noopener">DOI: 10.13140/RG.2.2.14787.92963</a>
+            </p>
+          </div>
+        </li>
+        <li class="pub">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <h3>Search using Grover's Algorithm</h3>
+            <p class="pub-authors">Chandrachud Pati</p>
+            <p class="pub-venue"><span class="tag">Technical report</span> An exposition and implementation of Grover's unstructured search.</p>
+            <p class="pub-links">
+              <a href="https://scholar.google.com/citations?user=u-qaIYEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-                <div class="box">
-                    <img src="Image/icons/xray.jfif" alt="">
-                    <h2 class="h-secondary center">Digital X-Ray</h2>
-                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?</p>
-                </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <span class="sec-num">04</span>
+        <h2>Selected projects</h2>
+      </div>
+      <div class="proj-grid">
+        <a class="proj" href="https://github.com/Chandrachud23/quantum-query-decision" target="_blank" rel="noopener">
+          <div class="proj-top"><h3>quantum-query-decision</h3><span class="proj-lang">Python</span></div>
+          <p>A simulation-free, closed-form criterion that reads compiled gate counts and device calibration to choose how to run a quantum search query: whole, cut, or factorized.</p>
+          <span class="proj-arrow">View on GitHub →</span>
+        </a>
+        <a class="proj" href="https://github.com/Chandrachud23/LLM-Akrasia" target="_blank" rel="noopener">
+          <div class="proj-top"><h3>LLM-Akrasia</h3><span class="proj-lang">Python</span></div>
+          <p>Studying akrasia-like behaviour in large language models — when models "know better" but act against it.</p>
+          <span class="proj-arrow">View on GitHub →</span>
+        </a>
+        <a class="proj" href="https://github.com/Chandrachud23/RP-QNN" target="_blank" rel="noopener">
+          <div class="proj-top"><h3>RP-QNN</h3><span class="proj-lang">Jupyter</span></div>
+          <p>Experiments with quantum neural networks and the role of random-projection / parameterized circuits as model layers.</p>
+          <span class="proj-arrow">View on GitHub →</span>
+        </a>
+        <a class="proj" href="https://github.com/Chandrachud23/Quantum-Diabetic-Retinopathy" target="_blank" rel="noopener">
+          <div class="proj-top"><h3>Quantum-Diabetic-Retinopathy</h3><span class="proj-lang">Jupyter</span></div>
+          <p>Detection of diabetic retinopathy using quantum computing — Runner-up, Flipkart GRID 5.0.</p>
+          <span class="proj-arrow">View on GitHub →</span>
+        </a>
+      </div>
+      <p class="proj-more"><a href="https://github.com/Chandrachud23" target="_blank" rel="noopener">More on GitHub →</a></p>
+    </section>
 
-                <div class="box">
-                    <img src="Image/icons/med.jfif" alt="">
-                    <h2 class="h-secondary center">Medicine Store</h2>
-                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?</p>
-                </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head">
+        <span class="sec-num">05</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">Feb 2026 — Present</div>
+          <div class="tl-body">
+            <h3>Pre-doctoral Researcher — Indian Institute of Science (IISc)</h3>
+            <p class="tl-org">DREAM Lab, Dept. of Computational &amp; Data Sciences · Prof. Yogesh Simmhan</p>
+            <p>Systems research spanning quantum computing (architecture &amp; noise-adaptive compilation) and GNN-based anomaly detection at scale. Led the HBR Decomposition work (under review, QCE 2026).</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Aug 2024 — Jan 2026</div>
+          <div class="tl-body">
+            <h3>Engineer II — American Express</h3>
+            <p class="tl-org">Next Generation Data Management · Gurugram, India</p>
+            <p>Databases and architecture at scale; built a GenAI-powered data-architecture documentation system (LLM pipelines) cutting manual overhead ~60%. Early promotion.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Feb 2024 — Jun 2024</div>
+          <div class="tl-body">
+            <h3>Data Science Intern — IDFC FIRST Bank</h3>
+            <p class="tl-org">New Age – Special Projects · Mumbai, India</p>
+            <p>Fine-tuned BERT / open-source LLMs on enterprise data for real-time transaction classification (~99% accuracy).</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Sep 2023 — Jan 2024</div>
+          <div class="tl-body">
+            <h3>Undergraduate Researcher — NIT Rourkela</h3>
+            <p class="tl-org">Hybrid Quantum–Classical ML · Advisor: Prof. Snehashish Chakraverty</p>
+            <p>Designed a hybrid quantum–classical neural network (2-qubit parameterized circuits as Keras layers) for credit-card fraud detection. Observing that transpilation fidelity moved model accuracy is what motivated my later compiler-fidelity work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="box">
-                    <img src="Image/icons/patho.jpg" alt="">
-                    <h2 class="h-secondary center">Pathlab</h2>
-                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?</p>
-                </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-head">
+        <span class="sec-num">06</span>
+        <h2>Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2019 — 2024</div>
+          <div class="tl-body">
+            <h3>Integrated M.Sc. in Mathematics — National Institute of Technology, Rourkela</h3>
+            <p class="tl-org">Odisha, India</p>
+            <p>Relevant coursework: quantum computation, quantum mechanics, probability &amp; statistics, stochastic processes, numerical analysis, graph theory, and number theory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="box">
-                    <img src="Image/icons/para.jpg" alt="">
-                    <h2 class="h-secondary center">Para-medical Training</h2>
-                    <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="contact">
-                <h2>Book an Appointment</h2>
-                <form action="">
-                    
-                    <p>Name <input type="text" name="name" required placeholder="Type your name" ></p>
-                    <p>
-                        <fieldset>
-                            <legend>Gender</legend>
-                            <p>
-                                Male <input type="radio" name="gender" id="male" required>
-                                Female <input type="radio" name="gender" id="female" required>
-                                Others <input type="radio" name="gender" id="other" required>
-                            </p>
-                        </fieldset>
-                    </p>
-                    <p>Address <textarea name="address" id="address" cols="50" rows="5" placeholder="Enter your Address" ></textarea></p>
-                    <p>E-mail <textarea name="mail" id="mail" cols="40" rows="1" placeholder="Enter your mail address"></textarea></p>
-                    <p>Pin-Code <input type="number" name="pin" id="pin" placeholder="Enter Pincode"></p>
-                    <input type="submit" value="Register Now">
-                </form>
-            </div>
-        </section>
+    <!-- AWARDS -->
+    <section class="section" id="awards">
+      <div class="section-head">
+        <span class="sec-num">07</span>
+        <h2>Honors &amp; awards</h2>
+      </div>
+      <ul class="awards">
+        <li><span class="award-mark">★</span><div><strong>ACM SIGMOD / PODS 2026 India Fellowship</strong> — Recipient</div></li>
+        <li><span class="award-mark">★</span><div><strong>American Express Early Careers Hackathon 2025</strong> (UK · US · India) — Synthetic data generation with GANs · <em>Winner</em></div></li>
+        <li><span class="award-mark">★</span><div><strong>IDFC FIRST Bank Data Science Hackathon 2023</strong> (FAME 2.0) — EMI Default Prediction · <em>Runner-up</em></div></li>
+        <li><span class="award-mark">★</span><div><strong>Flipkart GRID 5.0 2023</strong> — Diabetic retinopathy detection using quantum computing · Semi-finalist</div></li>
+        <li><span class="award-mark">★</span><div><strong>Tally CodeBrewers 2022</strong> — System programming for file tagging · Runner-up</div></li>
+        <li><span class="award-mark">★</span><div><strong>Unstop UG Leaders 2023</strong> — National hackathon &amp; quiz · All-India Rank 4</div></li>
+      </ul>
+    </section>
 
-        <section id="magic">
-            <h2>We wish you to live-<button id="btn" onclick="this.innerHTML=age()">Click here!</button></h2>
-            
-        </section>
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="section-head">
+        <span class="sec-num">08</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <p class="contact-lede">
+          I'm applying to PhD programs for Fall 2027. I'm most interested in making quantum
+          computation trustworthy, and in reliable learning on large, noisy data and I'd be
+          glad to talk about either.
+        </p>
+        <ul class="contact-list">
+          <li><span>Academic</span><a href="mailto:chandrachudp@iisc.ac.in">chandrachudp@iisc.ac.in</a></li>
+          <li><span>Personal</span><a href="mailto:chandrachudpati@gmail.com">chandrachudpati@gmail.com</a></li>
+          <li><span>Scholar</span><a href="https://scholar.google.com/citations?user=u-qaIYEAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Chandrachud23" target="_blank" rel="noopener">github.com/Chandrachud23</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/chandrachud-pati/" target="_blank" rel="noopener">linkedin.com/in/chandrachud-pati</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-        <footer>
-            <div class="center">
-                Copyright &copy; Chandrachud Diagnostic Centre. All rights reserved!
-            </div>
-        </footer>
-    </main>
+  <footer class="footer">
+    <p>© <span id="year"></span> Chandrachud Pati · Bengaluru, India</p>
+    <p class="footer-note">Built as a research portfolio. Last updated June 2026.</p>
+  </footer>
 
-<script src="alive.js"></script>   
+  <script src="js/main.js"></script>
 </body>
 </html>
