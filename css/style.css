@@ -274,6 +274,63 @@ html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
   letter-spacing: .5px; color: var(--ink-faint); width: 78px; flex-shrink: 0; padding-top: 2px;
 }
 
+/* ---------- GALLERY (masonry, native aspect ratios) ---------- */
+.gallery {
+  column-count: 3;
+  column-gap: 14px;
+}
+@media (max-width: 820px) { .gallery { column-count: 2; } }
+@media (max-width: 480px) { .gallery { column-count: 1; } }
+
+.gallery figure {
+  break-inside: avoid;
+  margin: 0 0 14px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  cursor: zoom-in;
+  background: var(--paper-2);
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;           /* keeps each photo's true resolution/aspect */
+  transition: transform .5s ease;
+}
+.gallery figure:hover img { transform: scale(1.04); }
+.gallery figcaption {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 20px 14px 12px;
+  font-size: .82rem; font-weight: 500; color: #fff;
+  background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,0));
+  opacity: 0; transform: translateY(6px);
+  transition: opacity .25s ease, transform .25s ease;
+}
+.gallery figure:hover figcaption { opacity: 1; transform: none; }
+
+/* ---------- LIGHTBOX ---------- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 200;
+  display: none; place-items: center;
+  background: rgba(12,12,14,.86);
+  backdrop-filter: blur(4px);
+  padding: 24px;
+  cursor: zoom-out;
+}
+.lightbox.open { display: grid; }
+.lightbox img {
+  max-width: 92vw; max-height: 88vh;
+  border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+.lightbox-close {
+  position: absolute; top: 18px; right: 24px;
+  background: none; border: none; color: #fff; font-size: 2.2rem; line-height: 1;
+  cursor: pointer; opacity: .8; transition: opacity .2s ease;
+}
+.lightbox-close:hover { opacity: 1; }
+
 /* ---------- FOOTER ---------- */
 .footer {
   max-width: var(--max); margin: 0 auto; padding: 40px 24px 60px;

@@ -24,6 +24,20 @@ document.getElementById('year').textContent = new Date().getFullYear();
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
 
+// ---- Gallery lightbox ----
+(function () {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  const lbImg = lb.querySelector('img');
+  const open = (src, alt) => { lbImg.src = src; lbImg.alt = alt || ''; lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); };
+  const close = () => { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; };
+  document.querySelectorAll('.gallery img').forEach((img) => {
+    img.addEventListener('click', () => open(img.currentSrc || img.src, img.alt));
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+
 // ---- Scroll reveal ----
 (function () {
   const els = document.querySelectorAll('.section, .hero-text, .hero-photo');
