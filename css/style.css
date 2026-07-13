@@ -209,7 +209,10 @@ html[data-theme="dark"] .btn-primary { color: #11131a; }
   background: var(--accent-soft); color: var(--accent); margin-right: 8px;
   vertical-align: middle;
 }
+.pub-anon h3 { font-style: italic; font-weight: 500; color: var(--ink-soft); }
 .tag-review { background: #fbeede; color: #9a6a16; }
+.tag-accepted { background: #e2f2e6; color: #2f7d43; }
+html[data-theme="dark"] .tag-accepted { background: #1c3325; color: #74c98a; }
 html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
 
 /* ---------- PROJECTS ---------- */
