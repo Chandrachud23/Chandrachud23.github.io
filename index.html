@@ -96,26 +96,30 @@
         <h2>Research interests</h2>
       </div>
       <p class="research-intro">
-        Three directions, unified by a single concern — <em>making computation reliable</em>,
-        from the quantum compiler down to production fraud systems.
+        Quantum computers promise to expand what is computable — but today's machines are noisy,
+        and coaxing a <em>trustworthy</em> answer out of them is a full-stack problem, from how a
+        circuit is compiled to how its results are certified. My work spans that stack, toward
+        quantum computation reliable enough to use — a goal at the core of India's National Quantum
+        Mission.
       </p>
-      <div class="cards cards-3">
+      <div class="cards">
         <article class="card">
-          <h3>Compiler fidelity &amp; benchmarking</h3>
-          <p>How and <em>where</em> quantum compilers lose fidelity. My HBR decomposition attributes
-          loss across the high-level, basis, and routing stages — exposing stage-specific bottlenecks
-          that vary by circuit and stay hidden in aggregate benchmarks, across SDKs and real hardware.</p>
+          <h3>Quantum compilation &amp; systems</h3>
+          <p>Full-stack co-design of the quantum stack: noise-adaptive compiler design and per-phase
+          fidelity attribution (my HBR decomposition), together with cross-platform benchmarking of
+          real NISQ hardware — treating compiler, runtime, and device as one system.</p>
         </article>
         <article class="card">
-          <h3>Execution planning &amp; feasibility</h3>
-          <p>Planning how a circuit actually runs: routing-aware execution planning for quantum search
-          circuits, and shot-budget feasibility — given a device, circuit, and precision target, what
-          is a sound budget, and when is a target simply out of reach?</p>
+          <h3>Reliable &amp; feasible execution</h3>
+          <p>From quantum search and optimization algorithms down to execution planning and
+          shot-budget feasibility — sound resource estimates, and certifying when a precision target
+          is actually reachable, so a result carries a guarantee rather than a hope.</p>
         </article>
         <article class="card">
-          <h3>Anomaly detection at scale</h3>
-          <p>A second, applied thread — graph neural networks for fraud and AML detection on
-          transaction graphs at production scale, with NPCI.</p>
+          <h3>Anomaly detection &amp; hybrid ML</h3>
+          <p>An applied thread on the same reliability question — graph neural networks for fraud and
+          AML detection at production scale, and hybrid quantum–classical models on hard real-world
+          data.</p>
         </article>
       </div>
     </section>
