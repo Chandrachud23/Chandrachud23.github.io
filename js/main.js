@@ -55,6 +55,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
   const links = [...document.querySelectorAll('.tab-link')];
   const sections = [...document.querySelectorAll('#main > section.section')];
+  const hero = document.getElementById('top');
   let current = null;
 
   function showTab(name, doScroll) {
@@ -62,6 +63,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     if (name === current) { if (doScroll) window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
     current = name;
     const ids = TABS[name];
+    if (hero) hero.hidden = name !== 'about';   // hero (photo + intro) only on the landing tab
     sections.forEach((s) => {
       const on = ids.indexOf(s.id) !== -1;
       s.hidden = !on;
