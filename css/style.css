@@ -88,6 +88,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   background: var(--accent); transition: width .25s ease;
 }
 .nav-links a:hover::after { width: 100%; }
+.nav-links a.tab-link { cursor: pointer; }
+.nav-links a.active { color: var(--ink); font-weight: 600; }
+.nav-links a.active::after { width: 100%; }
 .theme-toggle {
   background: none; border: 1px solid var(--line); color: var(--ink-soft);
   width: 36px; height: 36px; border-radius: 50%; cursor: pointer;
@@ -357,7 +360,15 @@ html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
   .hero-photo { order: -1; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; }
   .quick-facts { max-width: 280px; }
   .cards { grid-template-columns: 1fr 1fr; }
-  .nav-links { display: none; }
+  /* tabs move to a scrollable strip below the brand */
+  .nav-inner { flex-wrap: wrap; row-gap: 10px; }
+  .nav-links {
+    order: 3; width: 100%; margin-left: 0; gap: 20px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px; scrollbar-width: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-links a { white-space: nowrap; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }

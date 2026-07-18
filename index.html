@@ -68,6 +68,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <noscript><style>section.section[hidden]{display:block!important}</style></noscript>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -75,15 +76,14 @@
   <header class="nav" id="nav">
     <div class="nav-inner">
       <a class="nav-brand" href="#top">C·Pati</a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav-links" role="tablist" aria-label="Sections">
+        <a class="tab-link" role="tab" data-tab="about" href="#about">About</a>
+        <a class="tab-link" role="tab" data-tab="research" href="#research">Research</a>
+        <a class="tab-link" role="tab" data-tab="publications" href="#publications">Publications</a>
+        <a class="tab-link" role="tab" data-tab="experience" href="#experience">Experience</a>
+        <a class="tab-link" role="tab" data-tab="awards" href="#awards">Awards</a>
+        <a class="tab-link" role="tab" data-tab="gallery" href="#gallery">Gallery</a>
+        <a class="tab-link" role="tab" data-tab="contact" href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
         <span class="theme-icon">◑</span>
@@ -105,7 +105,7 @@
             <strong>large-scale anomaly detection</strong>.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#publications">View research</a>
+            <a class="btn btn-primary" href="#research">View research</a>
             <a class="btn btn-ghost" href="assets/Chandrachud_Pati_CV.pdf" target="_blank" rel="noopener">Download CV</a>
             <a class="btn btn-ghost" href="mailto:chandrachudp@iisc.ac.in">Get in touch</a>
           </div>
@@ -149,7 +149,7 @@
     </section>
 
     <!-- RESEARCH -->
-    <section class="section" id="research">
+    <section class="section" id="research" hidden>
       <div class="section-head">
         <span class="sec-num">02</span>
         <h2>Research interests</h2>
@@ -184,7 +184,7 @@
     </section>
 
     <!-- PUBLICATIONS -->
-    <section class="section" id="publications">
+    <section class="section" id="publications" hidden>
       <div class="section-head">
         <span class="sec-num">03</span>
         <h2>Publications &amp; preprints</h2>
@@ -243,7 +243,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="section" id="projects">
+    <section class="section" id="projects" hidden>
       <div class="section-head">
         <span class="sec-num">04</span>
         <h2>Selected projects</h2>
@@ -274,7 +274,7 @@
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
+    <section class="section" id="experience" hidden>
       <div class="section-head">
         <span class="sec-num">05</span>
         <h2>Experience</h2>
@@ -316,7 +316,7 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="section" id="education">
+    <section class="section" id="education" hidden>
       <div class="section-head">
         <span class="sec-num">06</span>
         <h2>Education</h2>
@@ -334,7 +334,7 @@
     </section>
 
     <!-- AWARDS -->
-    <section class="section" id="awards">
+    <section class="section" id="awards" hidden>
       <div class="section-head">
         <span class="sec-num">07</span>
         <h2>Honors &amp; awards</h2>
@@ -350,7 +350,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="section section-contact" id="contact">
+    <section class="section section-contact" id="contact" hidden>
       <div class="section-head">
         <span class="sec-num">08</span>
         <h2>Contact</h2>
@@ -372,7 +372,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="section" id="gallery">
+    <section class="section" id="gallery" hidden>
       <div class="section-head">
         <span class="sec-num">09</span>
         <h2>Gallery</h2>

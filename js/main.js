@@ -38,9 +38,80 @@ document.getElementById('year').textContent = new Date().getFullYear();
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 })();
 
-// ---- Scroll reveal ----
+// ---- Tabbed sections ----
 (function () {
-  const els = document.querySelectorAll('.section, .hero-text, .hero-photo');
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  const TABS = {
+    about: ['about'],
+    research: ['research', 'projects'],
+    publications: ['publications'],
+    experience: ['experience', 'education'],
+    awards: ['awards'],
+    gallery: ['gallery'],
+    contact: ['contact']
+  };
+  const idToTab = {};
+  Object.keys(TABS).forEach((t) => { idToTab[t] = t; TABS[t].forEach((id) => { idToTab[id] = t; }); });
+
+  const links = [...document.querySelectorAll('.tab-link')];
+  const sections = [...document.querySelectorAll('#main > section.section')];
+  let current = null;
+
+  function showTab(name, doScroll) {
+    if (!TABS[name]) name = 'about';
+    if (name === current) { if (doScroll) window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    current = name;
+    const ids = TABS[name];
+    sections.forEach((s) => {
+      const on = ids.indexOf(s.id) !== -1;
+      s.hidden = !on;
+      if (on) s.classList.add('in');
+    });
+    links.forEach((l) => {
+      const active = l.dataset.tab === name;
+      l.classList.toggle('active', active);
+      l.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    if (history.replaceState) history.replaceState(null, '', '#' + name);
+    if (doScroll) window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // intercept in-page anchor clicks that map to a tab (nav tabs, hero "View research", etc.)
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    const id = a.getAttribute('href').slice(1);
+    if (id === 'top') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
+    const tab = idToTab[id];
+    if (tab) { e.preventDefault(); showTab(tab, true); }
+  });
+
+  // arrow-key navigation across the tablist
+  const tablist = document.querySelector('.nav-links');
+  if (tablist) tablist.addEventListener('keydown', (e) => {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+    const i = links.indexOf(document.activeElement);
+    if (i === -1) return;
+    e.preventDefault();
+    const n = (i + (e.key === 'ArrowRight' ? 1 : links.length - 1)) % links.length;
+    links[n].focus();
+    showTab(links[n].dataset.tab, false);
+  });
+
+  // react to back/forward
+  window.addEventListener('hashchange', () => {
+    showTab(idToTab[location.hash.slice(1)] || 'about', false);
+  });
+
+  // initial tab (supports deep links like #publications); always land at the top so the hero shows
+  showTab(idToTab[(location.hash || '').slice(1)] || 'about', false);
+  window.scrollTo(0, 0);
+  window.addEventListener('load', () => window.scrollTo(0, 0));
+})();
+
+// ---- Scroll reveal (section panels only; hero stays always visible) ----
+(function () {
+  const els = document.querySelectorAll('.section');
   els.forEach((el) => el.classList.add('reveal'));
   if (!('IntersectionObserver' in window)) {
     els.forEach((el) => el.classList.add('in'));
