@@ -42,7 +42,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
 (function () {
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const TABS = {
-    about: ['about'],
     research: ['research', 'projects'],
     publications: ['publications'],
     experience: ['experience', 'education'],
@@ -59,11 +58,11 @@ document.getElementById('year').textContent = new Date().getFullYear();
   let current = null;
 
   function showTab(name, doScroll) {
-    if (!TABS[name]) name = 'about';
+    if (!TABS[name]) name = 'research';
     if (name === current) { if (doScroll) window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
     current = name;
     const ids = TABS[name];
-    if (hero) hero.hidden = name !== 'about';   // hero (photo + intro) only on the landing tab
+    if (hero) hero.hidden = name !== 'research'; // hero (photo + intro) only on the landing tab
     sections.forEach((s) => {
       const on = ids.indexOf(s.id) !== -1;
       s.hidden = !on;
@@ -102,11 +101,11 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
   // react to back/forward
   window.addEventListener('hashchange', () => {
-    showTab(idToTab[location.hash.slice(1)] || 'about', false);
+    showTab(idToTab[location.hash.slice(1)] || 'research', false);
   });
 
   // initial tab (supports deep links like #publications); always land at the top so the hero shows
-  showTab(idToTab[(location.hash || '').slice(1)] || 'about', false);
+  showTab(idToTab[(location.hash || '').slice(1)] || 'research', false);
   window.scrollTo(0, 0);
   window.addEventListener('load', () => window.scrollTo(0, 0));
 })();

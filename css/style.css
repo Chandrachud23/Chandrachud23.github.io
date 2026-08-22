@@ -1,5 +1,5 @@
 /* ============================================================
-   Chandrachud Pati — research portfolio
+   Chandrachud Pati, research portfolio
    Palette: warm paper + ink, with a quantum-indigo accent
    ============================================================ */
 
@@ -112,7 +112,8 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-size: clamp(2.6rem, 6vw, 4.1rem); line-height: 1.04;
   margin: 0 0 20px; letter-spacing: -.5px;
 }
-.lede { font-size: 1.18rem; color: var(--ink-soft); margin: 0 0 28px; max-width: 36ch; }
+.lede { font-size: 1.08rem; color: var(--ink-soft); margin: 0 0 16px; max-width: 52ch; }
+.lede-sub { font-size: .96rem; color: var(--ink-soft); margin: 0 0 28px; max-width: 52ch; }
 .lede em { font-style: italic; color: var(--ink); }
 .lede strong { color: var(--ink); font-weight: 600; }
 
@@ -257,6 +258,22 @@ html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
 .tl-org { margin: 0 0 8px; font-size: .9rem; color: var(--accent-2); font-weight: 500; }
 .tl-body p:last-child { margin: 0; font-size: .92rem; color: var(--ink-soft); max-width: 64ch; }
 
+/* ---------- SUB-HEADINGS & TIMELINE BULLETS ---------- */
+.sub-head {
+  font-family: var(--mono); font-size: .76rem; letter-spacing: 1.6px;
+  text-transform: uppercase; color: var(--accent-2); margin: 0 0 22px;
+}
+.sub-head-gap { margin-top: 46px; }
+
+.tl-points {
+  margin: 0; padding-left: 18px; max-width: 64ch;
+  font-size: .92rem; color: var(--ink-soft);
+}
+.tl-points li { margin-bottom: 7px; }
+.tl-points li:last-child { margin-bottom: 0; }
+.tl-points::marker, .tl-points li::marker { color: var(--accent-2); }
+.tl-points strong { color: var(--ink); font-weight: 600; }
+
 /* ---------- AWARDS ---------- */
 .awards { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .awards li {
@@ -278,6 +295,11 @@ html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
 .contact-list span {
   font-family: var(--mono); font-size: .78rem; text-transform: uppercase;
   letter-spacing: .5px; color: var(--ink-faint); width: 78px; flex-shrink: 0; padding-top: 2px;
+}
+.contact-list .contact-plain {
+  font-family: var(--sans); font-size: .93rem; text-transform: none;
+  letter-spacing: normal; color: var(--ink-soft);
+  width: auto; flex: 1 1 auto; min-width: 0; padding-top: 0;
 }
 
 /* ---------- GALLERY (masonry, native aspect ratios) ---------- */
