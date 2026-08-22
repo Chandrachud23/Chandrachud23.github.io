@@ -113,7 +113,6 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   margin: 0 0 20px; letter-spacing: -.5px;
 }
 .lede { font-size: 1.08rem; color: var(--ink-soft); margin: 0 0 16px; max-width: 52ch; }
-.lede-sub { font-size: .96rem; color: var(--ink-soft); margin: 0 0 28px; max-width: 52ch; }
 .lede em { font-style: italic; color: var(--ink); }
 .lede strong { color: var(--ink); font-weight: 600; }
 
@@ -257,6 +256,7 @@ html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
 .tl-body h3 { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; margin: 0 0 3px; }
 .tl-org { margin: 0 0 8px; font-size: .9rem; color: var(--accent-2); font-weight: 500; }
 .tl-body p:last-child { margin: 0; font-size: .92rem; color: var(--ink-soft); max-width: 64ch; }
+.tl-body p.tl-org:last-child { margin: 0; font-size: .9rem; color: var(--accent-2); font-weight: 500; }
 
 /* ---------- SUB-HEADINGS & TIMELINE BULLETS ---------- */
 .sub-head {

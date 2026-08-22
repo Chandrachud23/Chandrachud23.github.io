@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chandrachud Pati | Quantum Computing Systems Researcher, IISc</title>
-  <meta name="description" content="Chandrachud Pati is a pre-doctoral researcher in the DREAM Lab at IISc, advised by Prof. Yogesh Simmhan. He works on quantum computer systems: compilation, compiler diagnostics, resource estimation, and execution on NISQ hardware, partly under India's National Quantum Mission." />
+  <meta name="description" content="Chandrachud Pati is a pre-doctoral researcher in the DREAM Lab at IISc, advised by Prof. Yogesh Simmhan. He works on quantum computer systems: compilation, compiler diagnostics, and resource estimation, under India's National Quantum Mission." />
   <meta name="keywords" content="Chandrachud Pati, quantum computing, quantum compilers, quantum computer architecture, compiler diagnostics, NISQ benchmarking, fidelity attribution, HBR decomposition, quantum resource estimation, shot allocation, circuit cutting, quantum data management, National Quantum Mission, NQM, IISc, DREAM Lab, Yogesh Simmhan, PhD applicant" />
   <meta name="author" content="Chandrachud Pati" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -15,7 +15,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:site_name" content="Chandrachud Pati" />
   <meta property="og:title" content="Chandrachud Pati | Quantum Computing Systems Researcher, IISc" />
-  <meta property="og:description" content="Pre-doctoral researcher in the DREAM Lab at IISc. Quantum computer systems: compilation, compiler diagnostics, resource estimation, and execution on NISQ hardware." />
+  <meta property="og:description" content="Pre-doctoral researcher in the DREAM Lab at IISc. Quantum computer systems: compilation, compiler diagnostics, and resource estimation, under India's National Quantum Mission." />
   <meta property="og:url" content="https://chandrachud23.github.io/" />
   <meta property="og:image" content="https://chandrachud23.github.io/assets/profile.jpeg" />
   <meta property="og:image:alt" content="Chandrachud Pati" />
@@ -26,7 +26,7 @@
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chandrachud Pati | Quantum Computing Systems Researcher, IISc" />
-  <meta name="twitter:description" content="Pre-doctoral researcher in the DREAM Lab at IISc. Quantum computer systems: compilation, compiler diagnostics, resource estimation, and execution on NISQ hardware." />
+  <meta name="twitter:description" content="Pre-doctoral researcher in the DREAM Lab at IISc. Quantum computer systems: compilation, compiler diagnostics, and resource estimation, under India's National Quantum Mission." />
   <meta name="twitter:image" content="https://chandrachud23.github.io/assets/profile.jpeg" />
 
   <!-- Favicon -->
@@ -71,7 +71,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=20260822" />
+  <link rel="stylesheet" href="css/style.css?v=20260822c" />
   <noscript><style>section.section[hidden]{display:block!important}</style></noscript>
 </head>
 <body>
@@ -81,7 +81,7 @@
     <div class="nav-inner">
       <a class="nav-brand" href="#top">C·Pati</a>
       <nav class="nav-links" role="tablist" aria-label="Sections">
-        <a class="tab-link" role="tab" data-tab="research" href="#research">Research</a>
+        <a class="tab-link" role="tab" data-tab="home" href="#home">Home</a>
         <a class="tab-link" role="tab" data-tab="publications" href="#publications">Publications</a>
         <a class="tab-link" role="tab" data-tab="experience" href="#experience">Experience</a>
         <a class="tab-link" role="tab" data-tab="awards" href="#awards">Awards</a>
@@ -104,13 +104,8 @@
           <p class="lede">
             I am a pre-doctoral researcher in the DREAM Lab at the Indian Institute of
             Science (IISc), advised by Prof. Yogesh Simmhan. I work on quantum computer
-            systems: compilation, compiler diagnostics, resource estimation, and execution
-            on NISQ hardware, partly under India's National Quantum Mission (NQM).
-          </p>
-          <p class="lede-sub">
-            Before IISc I completed an Integrated M.Sc. in Mathematics at NIT Rourkela and
-            spent two years building production data and machine learning systems in
-            industry. I am applying to PhD programs for Fall 2027.
+            systems: compilation, compiler diagnostics, and resource estimation, under
+            India's National Quantum Mission (NQM).
           </p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="assets/Chandrachud_Pati_CV.pdf" target="_blank" rel="noopener">Download CV</a>
@@ -132,14 +127,14 @@
       </div>
     </section>
 
-    <!-- RESEARCH -->
-    <section class="section" id="research">
+    <!-- HOME / RESEARCH DIRECTIONS -->
+    <section class="section" id="home">
       <div class="cards">
         <article class="card">
-          <h3>Compiler and resource assurance</h3>
-          <p>HBR decomposition, which attributes fidelity loss across compiler phases and
-          SDKs, and one-round shot provisioning that reuses completed-query statistics. In an
-          IBM hardware campaign it preserved precision with half the submissions.</p>
+          <h3>Quantum compilation and diagnostics</h3>
+          <p>Fidelity attribution that holds across compiler phases, SDKs, and devices, so
+          that loss in a compiled circuit can be located rather than only measured end to
+          end.</p>
         </article>
         <article class="card">
           <h3>Quantum and HPC runtime systems</h3>
@@ -149,38 +144,11 @@
         </article>
         <article class="card">
           <h3>Quantum data systems</h3>
-          <p>An Apache Calcite admission and recovery layer that validates SQL-to-quantum
-          plans before cost-based selection and answer release.</p>
+          <p>Admission, costing, and recovery for SQL-to-quantum query plans, so that a plan
+          is validated before it runs and an answer is released only when it meets the
+          requested precision.</p>
         </article>
       </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects" hidden>
-      <div class="section-head">
-        <h2>Code</h2>
-      </div>
-      <div class="proj-grid">
-        <a class="proj" href="https://github.com/Chandrachud23/quantum-query-decision" target="_blank" rel="noopener">
-          <div class="proj-top"><h3>quantum-query-decision</h3><span class="proj-lang">Python</span></div>
-          <p>A simulation-free, closed-form criterion that reads compiled gate counts and device
-          calibration to choose how to run a quantum search query: whole, cut, or factorized.</p>
-          <span class="proj-arrow">View on GitHub &rarr;</span>
-        </a>
-        <a class="proj" href="https://github.com/Chandrachud23/RP-QNN" target="_blank" rel="noopener">
-          <div class="proj-top"><h3>RP-QNN</h3><span class="proj-lang">Jupyter</span></div>
-          <p>Experiments with quantum neural networks and the role of random-projection and
-          parameterized circuits used as trainable model layers.</p>
-          <span class="proj-arrow">View on GitHub &rarr;</span>
-        </a>
-        <a class="proj" href="https://github.com/Chandrachud23/Quantum-Diabetic-Retinopathy" target="_blank" rel="noopener">
-          <div class="proj-top"><h3>Quantum-Diabetic-Retinopathy</h3><span class="proj-lang">Jupyter</span></div>
-          <p>Diabetic-retinopathy detection with quantum circuits in the classification pipeline.
-          Semi-finalist, Flipkart GRID 5.0.</p>
-          <span class="proj-arrow">View on GitHub &rarr;</span>
-        </a>
-      </div>
-      <p class="proj-more"><a href="https://github.com/Chandrachud23" target="_blank" rel="noopener">More on GitHub &rarr;</a></p>
     </section>
 
     <!-- PUBLICATIONS -->
@@ -213,7 +181,7 @@
           <div class="pub-body">
             <h3>Title withheld for double-blind review</h3>
             <p class="pub-authors">Chandrachud Pati, Yogesh Simmhan</p>
-            <p class="pub-venue"><span class="tag tag-review">Under review</span> SFWM, co-located with SC 2026</p>
+            <p class="pub-venue"><span class="tag tag-review">Under review</span> SFWM 2026, the 2nd International Workshop for Software Frameworks and Workload Management on Quantum-HPC Ecosystems, co-located with SC 2026</p>
           </div>
         </li>
       </ol>
@@ -233,19 +201,6 @@
           <div class="tl-body">
             <h3>Pre-doctoral Researcher, Indian Institute of Science (IISc)</h3>
             <p class="tl-org">DREAM Lab, Dept. of Computational &amp; Data Sciences · Advisor: Prof. Yogesh Simmhan</p>
-            <ul class="tl-points">
-              <li><strong>Compiler and resource assurance.</strong> Designed HBR decomposition to
-              attribute fidelity loss across compiler phases and SDKs. Developing one-round shot
-              provisioning that reuses completed-query statistics, which preserved precision with
-              half the submissions in an IBM hardware campaign.</li>
-              <li><strong>Quantum and HPC runtime systems.</strong> Under India's National Quantum
-              Mission (NQM), developing resource-aware execution policies and application-aware
-              recovery for hybrid scientific workflows, connecting device-level evidence to
-              reliable runtime decisions.</li>
-              <li><strong>Quantum data systems.</strong> Developing an Apache Calcite admission and
-              recovery layer that validates SQL-to-quantum plans before cost-based selection and
-              answer release.</li>
-            </ul>
           </div>
         </div>
         <div class="tl-item">
@@ -253,13 +208,6 @@
           <div class="tl-body">
             <h3>Research Project, NIT Rourkela</h3>
             <p class="tl-org">Hybrid Classical-Quantum Machine Learning · Advisor: Prof. Snehashish Chakraverty</p>
-            <ul class="tl-points">
-              <li>Designed a hybrid neural network with two-qubit parameterized quantum circuits,
-              implemented in Qiskit and PennyLane as trainable Keras layers.</li>
-              <li>Reached an AUC of 0.9433, about two percentage points above a matched classical
-              baseline. Noticing that transpilation fidelity moved model accuracy is what motivated
-              my later compiler-fidelity work.</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -271,13 +219,6 @@
           <div class="tl-body">
             <h3>Engineer II, American Express</h3>
             <p class="tl-org">Next Generation Data Management · Gurugram, India</p>
-            <ul class="tl-points">
-              <li>Built an LLM-based data-architecture documentation system that cut manual
-              documentation effort by roughly 60% and contributed to an early promotion to
-              Engineer II.</li>
-              <li>Developed Python REST APIs for infrastructure provisioning and worked with
-              enterprise-scale distributed data systems.</li>
-            </ul>
           </div>
         </div>
         <div class="tl-item">
@@ -285,12 +226,6 @@
           <div class="tl-body">
             <h3>Data Science Intern, IDFC FIRST Bank</h3>
             <p class="tl-org">New Age Special Projects · Mumbai, India</p>
-            <ul class="tl-points">
-              <li>Fine-tuned BERT and open-source language models for real-time transaction
-              classification, reaching roughly 99% accuracy on an internal evaluation set.</li>
-              <li>Built PySpark and AWS pipelines for ingesting, preprocessing, and analysing
-              large-scale transaction records.</li>
-            </ul>
           </div>
         </div>
         <div class="tl-item">
@@ -298,11 +233,6 @@
           <div class="tl-body">
             <h3>Engineering Intern, Tally Solutions</h3>
             <p class="tl-org">CTO's Office · Bengaluru, India</p>
-            <ul class="tl-points">
-              <li>Designed Go chaincode and REST APIs for a Hyperledger Fabric platform supporting
-              MSME credit workflows, and containerized peers, orderers, certificate authorities,
-              and application services.</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -393,6 +323,6 @@
     <p>© <span id="year"></span> Chandrachud Pati · Bengaluru, India</p>
   </footer>
 
-  <script src="js/main.js?v=20260822"></script>
+  <script src="js/main.js?v=20260822c"></script>
 </body>
 </html>
