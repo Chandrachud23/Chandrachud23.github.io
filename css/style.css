@@ -190,6 +190,9 @@ html[data-theme="dark"] .btn-primary { color: #11131a; }
   color: var(--ink);
 }
 .card p { margin: 0; font-size: .92rem; color: var(--ink-soft); line-height: 1.55; }
+.card p.card-pubs {
+  margin-top: 14px; font-family: var(--mono); font-size: .76rem; color: var(--accent-2);
+}
 
 /* ---------- PUBLICATIONS ---------- */
 .pub-list { list-style: none; margin: 0; padding: 0; }
@@ -204,6 +207,9 @@ html[data-theme="dark"] .btn-primary { color: #11131a; }
   line-height: 1.35;
 }
 .pub-authors { margin: 0 0 8px; color: var(--ink-soft); font-size: .92rem; }
+.pub-authors strong { color: var(--ink); font-weight: 600; }
+.pub-authors sup { font-size: .7em; }
+.pub-note { color: var(--ink-faint); font-size: .84rem; margin-left: 4px; }
 .pub-venue { margin: 0 0 8px; color: var(--ink-soft); font-size: .92rem; }
 .pub-links { margin: 0; font-size: .88rem; font-family: var(--mono); }
 .tag {
@@ -214,8 +220,11 @@ html[data-theme="dark"] .btn-primary { color: #11131a; }
 }
 .pub-anon h3 { font-style: italic; font-weight: 500; color: var(--ink-soft); }
 .tag-review { background: #fbeede; color: #9a6a16; }
-.tag-accepted { background: #e2f2e6; color: #2f7d43; }
-html[data-theme="dark"] .tag-accepted { background: #1c3325; color: #74c98a; }
+.tag-conf { background: var(--accent-soft); color: var(--accent); }
+.tag-workshop { background: #efeaf7; color: #5d4d8a; }
+.tag-poster { background: #e2f2e6; color: #2f7d43; }
+html[data-theme="dark"] .tag-workshop { background: #2a2438; color: #b9a9e0; }
+html[data-theme="dark"] .tag-poster { background: #1c3325; color: #74c98a; }
 html[data-theme="dark"] .tag-review { background: #3a2e16; color: #d9ab57; }
 
 /* ---------- PROJECTS ---------- */
